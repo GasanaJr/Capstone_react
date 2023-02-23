@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(247, 242, 236);
+}
+
+.header {
+    background-color: #073d58;
+     display: flex;
+    justify-content: space-between; 
+    padding-right: 40px;
+    width: 100%;
+}
+
+
+.header img {
+    width: 100px;
+    height: 100px;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header ul li {
+    list-style-type: none;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: bolder;
+}
+
+/* .contentOne {
+    display: flex;
+} */
+
+.contentOne {
+    font-family: "Poppins";
+    padding: 50px;
+    margin-top: 10%;
+    max-width: 700px;
+    z-index: 1;
+
+}
+
+.contentOne h1 {
+    font-size: 70px;
+    font-family: serif;
+    font-weight: 600;
+}
+
+.contentOne h1 span {
+    font-family: serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.contentOne a {
+    background: #073d58;
+    color: #fff;
+    padding: 15px 70px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.sign a {
+    background: #1077b0;
+    width: 100px;
+    padding: 5px 20px;
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+
+
+.profile img {
+    width: 500px;
+    display: block;
+}
+
+.profile {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+/* .junior {
+    padding: 40px;
+}
+
+.junior img {
+    border-radius: 20px;
+} */
+
+/* .text {
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: "Poppins";
+}
+
+.text button {
+    margin-top: 10px;
+}
+
+.text button {
+    width: 110px;
+    height: 60px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: #073d58;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    font-weight: bold;
+} */
+
+
+
+
+
+.fa-solid {
+    padding-right: 10px;
+}
+
+.t1 {
+    margin-bottom: 100px;
+}
+
+.b1 {
+    margin-top: 60px;
+}
+
+form p {
+    color: white;
+    padding: 10px;
+}
+
+
+
+.signin label {
+    color: black;
+}
+
+
+.signin button {
+    color: black;
+}
+
+.about p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.about {
+    padding: 40px;
+}
+
+.abt {
+    display: flex;
+}
+
+.abt p {
+    padding: 20px;
+    margin: auto;
+}
+
+.about img {
+    width: 548px;
+    height: 328px;
+    border-radius: 38px;
+    padding: 20px;
+}
+
+.challenges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.challenge {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+
+}
+
+.challenge .ccard {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #16384c;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.challenge .ccard:hover {
+    height: 500px;
+}
+
+.challenge .ccard .imgBox {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: 0px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+
+}
+
+.challenge .ccard .imgBox img {
+    max-width: 100%;
+    border-radius: 4px;
+} 
+
+.challenge .ccard .ccontent {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Poppins";
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.challenge .ccard:hover .ccontent {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 20px;
+    transition-delay: 0.3s;
+} 
+
+
+
+
+
+.form input {
+    width: 295px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+
+#sub {
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+}
+
+.form button {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: #7DC7F0;
+    color: #000;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    font-weight: bold;
+    margin-left: 70px;
+
+}
+
+/* 
+.me {
+    font-family: "Poppins";
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.me img {
+    width: 600px;
+    height: 500px;
+}
+
+.aboutc {
+    padding: 25px;
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.aboutc h1 {
+    margin: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 35px;
+   text-transform: uppercase;
+}
+     */
+
+
+ @media only screen and (max-width: 800px) {
+   .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;} 
+  .card p {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+} 
+
+#name {
+   color: rgb(48, 45, 45);
+   font-size: 14px;
+}
+
+[data-signedin = "true"] .hidden {
+  display: none;
+}
+[data-signedin = "false"] .hidden {
+  display: block;
+}
+[data-signedin = "true"] .visible {
+  display: block;
+}
+[data-signedin = "false"] .visible {
+  display: none;
+}
